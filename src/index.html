@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="css/index.css">
+  <!--[if IE]>
+    <style>
+      .window__wrapper {
+        position: static;
+        margin: auto;
+        margin-top: 100px;
+        background: #737ac5;
+      }
+
+      .app {
+        background: #bbbee4;
+      }
+    </style>
+  <![endif]-->
+</head>
+<body>
+  <div class="app container-fluid">
+    <div class="window__wrapper">
+      <div class="window">
+
+        <div class="window__step step__name">
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <h2 class="window__title col-xs-10 text-center">Ввод имени пользователя</h2>
+            <div class="col-xs-1"></div>
+          </div>
+          <div class="row step__name__rowInput">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10">
+              <input 
+                type="text" 
+                class="form-control step__name__input" 
+                placeholder="Имя" 
+                aria-describedby="basic-addon1"
+              >
+            </div>
+            <div class="col-xs-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10 text-center">
+              <button 
+                type="button" 
+                class="step__name__confirm btn btn-default col-xs-12"
+              >Продолжить</button>
+            </div>
+            <div class="col-xs-1"></div>
+          </div>
+        </div>
+
+        <div class="window__step step__quiz">
+          <div class="row">
+            <div class="col-xs-12">
+              <h4 class="window__title step__quiz__title">Вопрос</h4>
+            </div>
+          </div>
+          <div class="row step__quiz__rowImage">
+            <div class="col-xs-1"></div>
+            <div class="step__quiz__img__wrapper col-xs-10">
+              <img 
+                class="step__quiz__img"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+                alt="image"
+              >
+            </div>
+            <div class="col-xs-1"></div>
+          </div>
+          <div class="row step__quiz__rowInput">
+            <div class="col-xs-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type="radio" name="inputAnswer" id="input1">
+                </span>
+                <span id="answerInput1" class="input-label">123</span>
+              </div>
+            </div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-5">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type="radio" name="inputAnswer" id="input2">
+                </span>
+                <span id="answerInput2" class="input-label">123</span>
+              </div>
+            </div>
+          </div>
+          <div class="row step__quiz__rowInput">
+            <div class="col-xs-4">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <input type="radio" name="inputAnswer" id="input3">
+                </span>
+                <span id="answerInput3" class="input-label">123</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-5 text-center">
+              <button 
+                type="button" 
+                class="step__quiz__confirm btn btn-default col-xs-12"
+              >Дальше</button>
+            </div>
+            <div class="col-xs-3"></div>
+          </div>
+        </div>
+
+        <div class="window__step step__result">
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <h2 class="window__title col-xs-10 text-center">Результаты</h2>
+            <div class="col-xs-1"></div>
+          </div>
+          <div class="row step__result__numbers">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8 text-center">
+              <span class="max_number">13</span>
+              <div class="line"></div>
+              <span class="right_answers">13</span>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+          <div class="row step__result__row_answer">
+
+            <!-- template answer item -->
+            <!-- <div class="step__result__answer_item">
+              <span class="step__result__answer_item__label label label-danger">
+                <span class="step__result__answer_item__label__number">1</span>
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+              </span>
+            </div> -->
+            
+          </div>
+          <div class="row step__result__row_response">
+            <h2 class="window__title step__result__row_response__text col-xs-12 text-center">Не сдали</h2>
+          </div>
+          <div class="row step__result__row_btn">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6 text-center">
+              <button 
+                type="button" 
+                class="step__result__repeat btn btn-default col-xs-12"
+              >
+                <span class="glyphicon glyphicon-repeat"></span>
+              </button>
+            </div>
+            <div class="col-xs-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.x-git.min.js"></script>
+</body>
+</html>

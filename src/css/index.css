@@ -1,0 +1,141 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  height: 100%;
+  background: linear-gradient(45deg, rgba(87,61,105,1) 0%, rgba(254,91,91,1) 91%);
+}
+
+.window__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 650px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  background: rgba(0, 0, 0, .3);
+}
+
+.window {
+  width: 100%;
+  height: 100%;
+}
+
+.window__step {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.window__title {
+  width: 80%;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.step__name {
+  display: block;
+}
+
+.step__name__rowInput {
+  margin-bottom: 380px;
+}
+
+.step__name__confirm {
+  
+}
+
+.input-label {
+  display: inline-block;
+  padding: 7px 12px;
+  background: #fff;
+  border: 1px solid #eeeeee;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 10px;
+}
+
+.step__quiz__title {
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.step__quiz__rowImage {
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.step__quiz__img__wrapper, .step__quiz__img {
+  height: 100%;
+  width: 100%;
+}
+
+.step__quiz__rowInput {
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+.step__result__numbers {
+  margin-bottom: 30px;
+}
+
+.line {
+  display: inline-block;
+  width: 6px;
+  height: 100px;
+  margin-right: 15px;
+  background: #fff;
+  transform: rotate(20deg);
+}
+
+.max_number, .right_answers {
+  font-size: 56px;
+  margin-right: 15px;
+  vertical-align: top;
+  color: #fff;
+}
+
+.right_answers {
+  display: inline-block;
+  padding-top: 20px;
+  color: #78ce78;
+}
+
+.step__result__row_answer {
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.step__result__answer_item {
+  display: inline-block;
+  width: 40px;
+  margin: 0 15px 30px 15px;
+}
+
+.step__result__answer_item__label {
+  padding: 8px 10px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.step__result__answer_item__label__number {
+  margin-right: 5px;
+}
+
+.step__result__row_response__text {
+  width: 100%;
+  margin: 20px 0;
+}
+.step__result__row_response__text.success { color: #78ce78; }
+.step__result__row_response__text.error { color: #e66666; }

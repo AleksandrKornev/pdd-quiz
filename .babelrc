@@ -1,0 +1,20 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["ie >= 7"]
+        },
+        "modules": false,
+        "loose": true
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/transform-runtime", 
+    "@babel/plugin-transform-modules-commonjs",
+    "babel-plugin-transform-es3-property-literals",
+    "babel-plugin-transform-es3-member-expression-literals"
+  ]
+}
